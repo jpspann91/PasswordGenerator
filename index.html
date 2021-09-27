@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Contains CSS Meta and viewport information-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects</title>
+    <title>Password</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
+<!--Contains entire page break down-->
 <body>
-
+    <!--Section to hold wrap around the page-->
     <section class="page">
-
+        <!--Header-->
         <header>
             <h1>Password Generator</h1>
         </header>
-
+        <!--Div to contain inner box-->
         <div class="box">
             <h2>Generate a Password</h2>
+            <!--Line break-->
             <br>
-
+            <!--Textarea to hold password and change as needed-->
             <textarea readonly id ="password" 
             placeholder="Your Secure Password"
             aria-label="Generated Password"></textarea>
-
+            <!--Another line break-->
             <br>
-
-            <div class="btn">
+            <!--Div to hold the button for generating password-->
+            <div>
                 <button class="makePW">Generate Password</button>
             </div>
         </div>
     </section>
-
+    <!--Import Java script file-->
     <script src="script.js"></script>
 
 </body>
