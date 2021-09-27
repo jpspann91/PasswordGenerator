@@ -21,7 +21,7 @@ body{
     background-color: gainsboro;
     margin: 0 auto;
     font-family: 'Monospace','Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: gray;
+    color: black;
 }
 /*Styles for page section*/
 .page{
@@ -35,10 +35,11 @@ body{
 /*Styles for box div*/
 .box{
     background-color: whitesmoke;
-    box-shadow: 5px 10px 18px gray;
-    margin-left: 10%;
-    margin-right: 10%;
+    box-shadow: 5px 5px 10px gray;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 /*Styles for textarea where password is held*/
 textarea {
     padding: 10%;
