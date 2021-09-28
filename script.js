@@ -32,10 +32,10 @@ for(var i = 0; i <lowercaseArray.length ; i++){
 var criteriaArr = [];
 
 //Variable to hold query selector, choosing button with makePW class
-var buttonAction = document.querySelector(".makePW");
+var generateButton = document.querySelector(".makePW");
 
 //Call add event listener so the button does something when clicked
-buttonAction.addEventListener("click", function (){
+generateButton.addEventListener("click", function (){
     //call generate password function and pass returned string into newString variable
     var newString = generatePassword();
     //place new string in the element given "password" class
