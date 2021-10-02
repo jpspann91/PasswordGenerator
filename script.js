@@ -42,6 +42,9 @@ generateButton.addEventListener("click", function (){
     document.getElementById("password").placeholder = newString;
 });
 
+var changeButton = document.querySelector(".changeTheme");
+changeButton.addEventListener("click", changeTheme);
+
 //function to generate a new password
 function generatePassword(){
     //prompt user to get password length store in password length variable
@@ -140,8 +143,18 @@ function generatePassword(){
     return passwordString;
 
 }
+function changeTheme(){
+    var changePage = document.querySelector(".page");
+    changePage.setAttribute("style", "background-color: black; color: green; border: 2px solid green");
+    var changeBox = document.querySelector(".box");
+    changeBox.setAttribute("style", "background-color: black; color: green; border: 2px solid green; box-shadow: 5px 5px 10px green;");
+    var changeTextArea = document.querySelector("textarea");
+    changeTextArea.setAttribute("style", "border: 2px dashed green; background-color: whitesmoke; color: white;")
+}
 //function to print the password to the textarea with password class
 function printPassword(text){
     document.getElementById("password").textContent = text;
 }
 printPassword(passwordString);
+
+

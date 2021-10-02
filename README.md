@@ -33,7 +33,7 @@ Joseph Paul Spann
 Completed before 10/02/2021
 
 # Screenshot
-image URL located within project: [./assets/images/password.gif]
+image URL located within project: ![alt text](./assets/images/password.gif)
 
 # Link
 URL Link to website: https://jpspann91.github.io/PasswordGenerator/

@@ -57,12 +57,12 @@ textarea {
 .makePW {
     background-color: tomato;
     padding: 14px 40px;
-    margin-left: 33%;
+    /* margin-left: 33%; */
     margin-top: 25px;
     border-radius: 20px;
     font-size: 20px;
 }
-/* .changeTheme{
+.changeTheme{
     background-color: lightskyblue;
     padding: 14px 40px;
     margin-left: 33%;
@@ -73,8 +73,8 @@ textarea {
 }
 .buttons{
     display: flex;
-    justify-content: space-evenly;
-} */
+    justify-content: center;
+}
 /*@Meida functions for screen size changes*/
 @media screen and (max-width: 980px) {
     /* Resized content to fit 980px  */
