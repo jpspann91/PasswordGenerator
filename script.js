@@ -143,16 +143,24 @@ function generatePassword(){
     return passwordString;
 
 }
+//Chbbange theme function changes to "Dark" theme
 function changeTheme(){
+    //create a variable for the element with page class
     var changePage = document.querySelector(".page");
+    //call set attribute on that element change BGC, color and etc
     changePage.setAttribute("style", "background-color: black; color: green; border: 2px solid green");
+    //create a variable for the element with box class
     var changeBox = document.querySelector(".box");
+    //call set attribute on that element to change things
     changeBox.setAttribute("style", "background-color: black; color: green; border: 2px solid green; box-shadow: 5px 5px 10px green;");
+    //create a variable for the text area element
     var changeTextArea = document.querySelector("textarea");
+    //call set attribute to change the style of the element
     changeTextArea.setAttribute("style", "border: 2px dashed green; background-color: whitesmoke; color: white;")
 }
 //function to print the password to the textarea with password class
 function printPassword(text){
+    //Prints this newpassword to the element give password id
     document.getElementById("password").textContent = text;
 }
 printPassword(passwordString);
