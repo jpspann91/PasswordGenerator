@@ -31,7 +31,7 @@ for(var i = 0; i <lowercaseArray.length ; i++){
 //Array to hold all available element choice once criteria is picked
 var criteriaArr = [];
 
-//Variable to hold query selector, choosing button with makePW class
+//Variable to hold an element choosing button with makePW class
 var generateButton = document.querySelector(".makePW");
 
 //Call add event listener so the button does something when clicked
@@ -48,7 +48,7 @@ changeButton.addEventListener("click", changeTheme);
 //function to generate a new password
 function generatePassword(){
     //prompt user to get password length store in password length variable
-    var passwordLength = parseInt(prompt("Enter in the number of chracters for your password between 12 - 25"));
+    var passwordLength = parseInt(prompt("Enter in the number of characters for your password between 12 - 25"));
 
     //Check to make sure user chose length
     if(!passwordLength){
@@ -136,14 +136,14 @@ function generatePassword(){
         passwordArray.push(randomCharacter);    
     }
     //Convert array to a string using join, toString() includes commas
-    //se I had to use join
+    //so I had to use join
     var passwordString = passwordArray.join("");
 
     //return the new string created
     return passwordString;
 
 }
-//Chbbange theme function changes to "Dark" theme
+//Change theme function changes to "Dark" theme
 function changeTheme(){
     //create a variable for the element with page class
     var changePage = document.querySelector(".page");
@@ -163,6 +163,7 @@ function printPassword(text){
     //Prints this newpassword to the element give password id
     document.getElementById("password").textContent = text;
 }
+//call printPassword method and pass in the new string created earlier
 printPassword(passwordString);
 
 
